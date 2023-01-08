@@ -1,6 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
+<!-- ... existing HTML ... -->
+
+<div id="like_button_container"></div>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+<!-- 만든 React 컴포넌트를 실행. -->
+<script src="like_button.js">
+  
+const domContainer = document.querySelector('#like_button_container');
+const root = ReactDOM.createRoot(domContainer);
+root.render(e(LikeButton));
+</script>
+
+<!-- ... existing HTML ... -->
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +45,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">asdasdas</div>
+    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
