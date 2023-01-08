@@ -3,21 +3,19 @@
 <html lang="en">
   
   <head>
-<!-- ... existing HTML ... -->
+  <script>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-<div id="like_button_container"></div>
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <App />
+);
 
-<!-- 만든 React 컴포넌트를 실행. -->
-<script src="like_button.js">
-  
-const domContainer = document.querySelector('#like_button_container');
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
-</script>
-
-<!-- ... existing HTML ... -->
+  </script>    
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -45,7 +43,7 @@ root.render(e(LikeButton));
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root"><h1>hi</h1></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
